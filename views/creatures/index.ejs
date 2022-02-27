@@ -1,0 +1,14 @@
+<h1>PREHISTORIC CREATURES</h1>
+
+<form method="GET" action="/dinosaurs">
+  <label for="nameFilter">Filter by name:</label>
+  <input type="text" id="nameFilter" name="nameFilter">
+  <input type="submit">
+</form>
+
+
+<ul>
+  <% myCreatures.forEach(creature => { %>
+  <li><%= creature.name %> is a <%= creature.type %></li>
+  <% }); %>
+</ul>
